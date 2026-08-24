@@ -12,7 +12,11 @@ extern tarefas
 extern int quantidade_tarefas;
 int adicionar_tarefa(ProcessInfo *processo);
 ProcessInfo *buscar_tarefa(char *nome);
-
+void adicionar_job(pid_t pid);  
+void listar_jobs(void);
+void *buscar_job(int id);
+void atualizar_status_job(int id, int status);
+int esperar_job(int id);
 
 
 
